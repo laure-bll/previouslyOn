@@ -1,0 +1,26 @@
+<div class="container">
+  <input type="text" class="input_search container-fluid" id="name" name="name" placeholder="Search member" required
+    (keyup)="searchMember($event.target.value)" />
+
+  <div class="row">
+    <div class="card card-link">
+      <p class="link-addfriends">To see your friends, it's over  <a class="addfriends" href="/friends">here</a> !</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="card">
+      <p *ngFor="let users of arrayData" class="list-members">
+        <button (click)="addMember($event.target.name)" name={{users.id}}>
+          <img src="assets/images/add.webp" alt='icone ajout' title="add" member name={{users.id}} />
+        </button>
+
+        <button (click)="blockMember($event.target.name)" name={{users.id}}>
+          <img src="assets/images/wrong.png" alt='icone blocage' title="block" name={{users.id}} />
+        </button>
+
+        {{users.login}}
+      </p>
+    </div>
+  </div>
+</div>

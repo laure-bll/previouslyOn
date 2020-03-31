@@ -1,0 +1,86 @@
+img {
+    width: 100%;
+}
+
+// CONTENT
+
+ .container {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .card h2 {
+    padding: 2%;
+    font-weight: bold;
+  }
+ 
+  .card {
+    text-align: center;
+    background-color: #79011b;
+    color: white;
+    border-radius: 8px;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1em;
+    padding: 1%;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .card p {
+    text-align: left;
+    padding-bottom: 1%;
+  }
+
+  .card button {
+    background: none;
+    border: none;
+    width: 5%;
+  }
+
+  .card button:hover {
+    background: none;
+    border: none;
+  }
+
+  .card .list-comments {
+    border-bottom: 1px solid #79011b;
+  }
+
+  .card .list-comments:last-child {
+    border-bottom: none;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #story {
+    background-color: #dddddd;
+    color: white;
+    font-size: x-large;
+    border: #79011b solid 4px;
+    border-radius: 8px;
+    margin-bottom: 3%;
+    font-weight: bolder;
+  }
+
+  .add {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .button {
+    color: white;
+    background-color: #79011b;
+    font-size: x-large;
+    border-radius: 8px;
+  }
+
+  .button:hover {
+    color: #f83b64;
+  }

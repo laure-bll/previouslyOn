@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <button class="random col-lg-6" (click)="Random()">Surprise me</button>
+    <div class="col-lg-12" *ngFor="let shows of arrayData">
+      <div class="container__shows">
+        <h1>{{shows.title}}</h1>
+        <img class="container__image img-fluid" src="{{shows.images.show}}" />
+        <p>Number of seasons: {{shows.seasons}}</p>
+        <p>Number of episodes: {{shows.episodes}}</p>
+        <p class="description">{{shows.description}}</p>
+        <a class="voirplus" href="infos/{{shows.id}}">See more</a>
+      </div>
+    </div>
+  </div>
+</div>

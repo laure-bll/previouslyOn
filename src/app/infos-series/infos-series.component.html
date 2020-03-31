@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="container__infos-show">
+      <img class="image_plus" (click)="List()"
+          src="assets/images/icone.svg" />
+      <img class="image_plus archive" (click)="Archive()" src="assets/images/archive.png" />
+      <h1>{{this.arrayData['title']}}</h1>
+      <img class="container__image img-fluid" src="{{this.arrayData['images'].show}}" />
+      <p class="info"><span>Number of seasons:</span> {{this.arrayData['seasons']}}</p>
+      <p class="info"><span> Number of episodes:</span> {{this.arrayData['episodes']}}</p>
+      <p class="info"><span> During:</span> {{this.arrayData['length']}} minutes</p>
+      <p class="info"><span>Raking:</span> {{this.arrayData['notes'].mean.toFixed(1)}}/5</p>
+      <p class="info"><span>Resum:</span> {{this.arrayData['description']}}</p>
+      <p class="info"><a  class="info-episode" href="episodes/{{ this.arrayData['id']}}">Show episodes</a></p>
+    </div>
+  </div>
+</div>

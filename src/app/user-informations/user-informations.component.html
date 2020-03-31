@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="card">
+      <h2>Identity card</h2><br><br>
+      <p class="avatar" *ngFor="let avatar of arrayAvatar"><img src="{{avatar}}" alt="avatar" /></p>
+      <hr>
+      <p *ngFor="let login of arrayUser">LOGIN : {{login}}</p>
+      <hr>
+      <p *ngFor="let email of arrayEmail">EMAIL : {{email}}</p>
+    </div>
+  </div>
+</div>

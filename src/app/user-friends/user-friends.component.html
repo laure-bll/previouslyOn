@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="card card-link">
+      <p class="link-addfriends">To see your friends, it's over <a class="addfriends" href="/members">here</a> !</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="card">
+      <h2>Friends</h2><br><br>
+
+      <p *ngFor="let users of arrayData" class="list">
+        <button (click)="removeFriend($event.target.name)" name={{users.id}}>
+          <img src="assets/images/cross_mark.webp" alt='icon remove' title="remove" name={{users.id}} />
+        </button>
+
+        <button (click)="blockFriend($event.target.name)" name={{users.id}}>
+          <img src="assets/images/wrong.png" alt='icon block' title="block" name={{users.id}} />
+        </button>
+
+        {{users.login}}
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Blocked</h2><br><br>
+
+      <p *ngFor="let users of arrayBlocked" class="list">
+        <button (click)="deblockFriend($event.target.name)" name={{users.id}}>
+          <img src="assets/images/cross_mark.webp" alt='icon suppression' title="remove" name={{users.id}} />
+        </button>
+
+        <button (click)="deblockAddFriend($event.target.name)" name={{users.id}}>
+          <img src="assets/images/add.webp" alt='icon add' title="add" name={{users.id}} />
+        </button>
+
+        {{users.login}}
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="card">
+      <h2>Invitations sended</h2><br><br>
+      <p *ngFor="let users of arraySend" class="list">{{ users.login }}</p>
+      <p *ngFor="let users of arrayReceive" class="list">{{ users.login }}</p>
+    </div>
+
+    <!-- <div class="card">
+            <h2>Added</h2><br><br>
+            <p *ngFor="let users of arrayReceive" class="list">{{ users.login }}</p>
+        </div> -->
+  </div>
+</div>

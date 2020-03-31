@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="row">
+    <header class="containerheader col-lg-12">
+      <div class="logoheader">
+        <a href="/home"><img src="assets/images/logo.png" alt="logo" /></a>
+      </div>
+      <div class="container__navbar">
+        <nav class="navbar navbar-expand-lg">
+          <ul class="navbar-nav ">
+            <li class="nav-item active">
+              <a class="nav-link" href="/home">Home |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/random">Random Serie |</a>
+            </li>
+            <li class="nav-item" *ngIf="connection == true">
+              <a class="nav-link" href="/dashboard">Dashboard </a>
+            </li>
+            <li class="nav-item" *ngIf="connection !== true">
+              <a class="nav-link" href="/login">Sign In </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+</div>
+
+
+
+<router-outlet></router-outlet>

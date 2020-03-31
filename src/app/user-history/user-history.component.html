@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="card">
+      <h2>History</h2><br><br>
+
+      <p *ngFor="let episodes of arrayData" class="list-episodes">
+        <button (click)="removeEpisode($event.target.name)" name={{episodes.id}}>
+          <img src="assets/images/cross_mark.webp" alt='icone suppression' title="remove" name={{episodes.id}} />
+        </button>
+        {{episodes.show.title}} - {{episodes.code}} : {{episodes.title}}
+      </p>
+    </div>
+  </div>
+</div>

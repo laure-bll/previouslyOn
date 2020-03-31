@@ -1,0 +1,13 @@
+<h1>Current Shows</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6" *ngFor="let list of arrayData">
+      <div class="container__shows">
+        <button class="button" (click)="Delete(list.id)">Remove from list</button>
+        <h1 class="title">{{list.title}}</h1>
+        <img class="container__image img-fluid" src="{{list.images.show}}" />
+        <a class="voirplus" href="infos/{{list.id}}">Detail page</a>
+      </div>
+    </div>
+  </div>
+</div>

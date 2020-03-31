@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="container__infos-show">
+      <h1>{{this.arrayData['movie'].title}}</h1>
+      <img class="container__image img-fluid" src="{{this.arrayData['movie'].poster}}" />
+      <p class="info"><span>Director:</span> {{this.arrayData['movie'].director}}</p>
+      <p class="info"><span>Year production:</span> {{this.arrayData['movie'].production_year}}</p>
+      <p class="info"><span>Raking:</span> {{this.arrayData['movie'].notes.mean.toFixed(1)}}/5</p>
+      <p class="info"><span>Resum:</span> {{this.arrayData['movie'].synopsis}}</p><br>
+      <p class="info" *ngIf="this.arrayData['movie'].tagline !== this.vide"><span>Catchphrase :</span> {{this.arrayData['movie'].tagline}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="card">
+            <h2>Episodes</h2><br><br>
+  
+            <div *ngFor="let episodes of arrayData" class="list-episodes">
+                <button (click)="removeEpisode($event.target.name)" name={{episodes.id}}>
+                    <img src="assets/images/cross_mark.webp" alt='icon remove' title="not seen" name={{episodes.id}}/>
+                </button>
+  
+                <button (click)="addEpisode($event.target.name)" name={{episodes.id}}>
+                    <img src="assets/images/plus.webp" alt='icon add' title="mark episode seen" name={{episodes.id}}/>
+                </button>
+  
+                <button (click)="addPrecedentEpisodes($event.target.name)" name={{episodes.id}}>
+                    <img class="size" src="assets/images/all.png" alt='icon add' title="mark all precedent episodes seen" name={{episodes.id}}/>
+                </button>
+  
+                {{ episodes.code }} - {{episodes.title}}
+  
+                <img class="icon" *ngIf=" episodes.user.seen == true" src="assets/images/seen.webp"/>
+                <img class="icon" *ngIf=" episodes.user.seen == false" src="assets/images/notseen.png"/>
+                <br><br>
+  
+                <a class="link" href="comments/{{episodes.id}}">See all comments ({{episodes.comments}})</a><br><br>
+                <a class="link"  href="detail_episode/{{episodes.id}}">See more </a><br><br>
+            </div>
+        </div>
+    </div>
+  </div>

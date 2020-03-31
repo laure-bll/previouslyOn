@@ -1,0 +1,71 @@
+
+  .container__search {
+    margin: auto;
+
+  }
+  
+  .btn-outline-success {
+    color: #79011b;
+    border: #79011b 2px solid;
+    font-weight: bold;
+    font-size: x-large;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #79011b;
+  
+  }
+  
+  .form-control {
+    font-size: x-large;
+  }
+  
+.container__shows {
+    border: #79011b solid 2px;
+    border-radius: 2%;
+    padding: 5%;
+    padding-bottom: 15%;
+    background-color: #79011b;
+    margin: 5%;
+    color: white;
+    height: 630px;
+    font-weight: bold;
+
+}
+
+.container__image {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.voirplus {
+  color: #eb6ac0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  border: 1px solid #ce028a;
+  border-radius: 8px;
+  padding: 1%;
+}
+
+.voirplus:hover {
+color: #ce028a;
+}
+
+
+.input_search {
+
+  height: 4em;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  text-align: center;
+  color: white;
+  border: 6px solid #79011b;
+  border-style: double;
+  border-radius: 4em;
+  background-color: #79011b;
+  font-weight: bold;
+  font-weight: bold;
+
+}
+

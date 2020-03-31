@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="card">
+      <h2>Comments</h2><br><br>
+
+      <p *ngFor="let comments of arrayData" class="list-comments">
+        <img class="col-lg-2" src="{{comments.avatar}}"> posted the: {{comments.date}}<br>{{ comments.login }} :
+        {{ comments.text}}
+      </p>
+    </div>
+    <div class="add">
+        <textarea (keyup)="text($event.target.value)" id="story" name="story" rows="7" cols="40">
+        </textarea>
+        <button class="button" (click)="addComment()">Add a comment</button>
+    </div>
+  </div>
+</div>

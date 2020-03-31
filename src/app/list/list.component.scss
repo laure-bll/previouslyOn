@@ -1,0 +1,87 @@
+img {
+  width: 100%;
+}
+
+/* Header */
+
+.logoheader {
+  width: 10%;
+}
+
+.containerheader {
+  display: flex;
+  flex-direction: row;
+}
+
+.container__navbar {
+  margin: auto;
+  font-size: x-large;
+  margin-top: 3%;
+  margin-left: 25%;
+  border: #79011b 2px solid;
+  background-color: #79011b;
+  border-radius: 8px;
+}
+
+.container__infos-show {
+  border: #79011b solid 2px;
+  border-radius: 2%;
+  padding: 5%;
+  padding-bottom: 20%;
+  background-color: #79011b;
+  margin: 5%;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  color: #79011b;
+  font-weight: bolder;
+  margin-top: 8%;
+}
+
+.title {
+  color: white;
+}
+
+.container__shows {
+  border: #79011b solid 2px;
+  border-radius: 2%;
+  padding: 5%;
+  padding-bottom: 15%;
+  background-color: #79011b;
+  margin: 5%;
+  color: white;
+  height: 400px;
+}
+
+.container__image {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.voirplus {
+  color: #eb6ac0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  border: 1px solid #ce028a;
+  border-radius: 8px;
+  padding: 1%;
+}
+
+.button {
+  color: #eb6ac0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  border: 1px solid #ce028a;
+  background-color: #79011b;
+  border-radius: 8px;
+  padding: 1%;
+  float: right;
+}

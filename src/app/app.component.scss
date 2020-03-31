@@ -1,0 +1,33 @@
+
+img {
+    width: 100%;
+  }
+  
+  /* Header */
+  
+  .logoheader {
+    width: 10%;
+  }
+  
+  .containerheader {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .container__navbar {
+    margin: auto;
+    font-size: x-large;
+    margin-top: 3%;
+    margin-left: 27%;
+    border: #79011b 2px solid;
+    background-color: #79011b;
+    border-radius: 8px;
+    font-weight: bold;
+
+  }
+  
+  .nav-link {
+    color: white;
+    font-weight: bold;
+  }
+  

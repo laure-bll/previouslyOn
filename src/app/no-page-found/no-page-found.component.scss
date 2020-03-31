@@ -1,0 +1,43 @@
+img {
+    width: 100%;
+}
+
+  /* Header */
+  
+  .containerheader {
+    display: flex;
+    flex-direction: row;
+  }
+
+#buttonheader {
+    width: 4%;
+    background: none;
+    border: none;
+    float: right;
+}
+.goback {
+    text-decoration: none;
+    color: white;
+
+}
+
+.container {
+    background: #79011b;
+    width: 60%;
+    margin: auto;
+    margin-top: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: red;
+    text-align: center;
+    border: 4px #d30b36 solid;
+    font-size: x-large;
+}
+
+.sorry {
+    margin-bottom: 10%;
+}
+
+.goback:hover {
+    color: #ce028a;
+}
