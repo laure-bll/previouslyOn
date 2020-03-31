@@ -20,6 +20,6 @@ Lancer la commande "ng serve" et se rendre sur le lien indiqué.
 
 # creation
 
-Laure Bellanger
-Sarata Aidara
+- Laure Bellanger
+- Sarata Aidara
 
