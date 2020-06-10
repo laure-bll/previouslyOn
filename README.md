@@ -15,11 +15,11 @@ Lancer la commande "ng serve" et se rendre sur le lien indiqué.
 
 # fabrication
 
-- Angular CLI
+- Angular
 - HTML5 / CSS3
 
 # creation
 
-Laure Bellanger
-Sarata Aidara
+- Laure Bellanger
+- Sarata Aidara
 
